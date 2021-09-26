@@ -24,4 +24,4 @@ IP_ADDR=$(hostname -I)
 MAC=$(ip link show | awk '$1 == "link/ether" {print $2}')
 echo "#Network: IP ${IP_ADDR} (${MAC})"
 
-echo" #Sudo: $(grep -c 'COMMAND' /var/log/sudo/sudo_log) cmd"
+echo "#Sudo: $(grep -c 'COMMAND' /var/log/sudo/sudo_log) cmd"
